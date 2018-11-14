@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBGGray"
+    android:orientation="vertical">
+
+    <com.sxmh.wt.education.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/colorBGWhite"
+        app:title="@string/client_service_center"
+        app:title_color="@color/colorTextBlack" />
+
+    <ImageView
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:src="@drawable/service_center_pic_bg"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/base_dimen"
+        android:layout_marginRight="@dimen/base_dimen"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_pre_consultation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_white_shadow_back"
+            android:drawableLeft="@drawable/icon_presale"
+            android:drawablePadding="@dimen/small_dimen"
+            android:drawableRight="@drawable/set_more"
+            android:padding="@dimen/base_dimen"
+            android:text="@string/pre_consultation" />
+
+        <TextView
+            android:id="@+id/tv_after_consultation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_white_shadow_back"
+            android:drawableLeft="@drawable/icon_aftersale"
+            android:drawablePadding="@dimen/small_dimen"
+            android:drawableRight="@drawable/set_more"
+            android:padding="@dimen/base_dimen"
+            android:text="@string/after_consultation" />
+
+        <TextView
+            android:id="@+id/tv_hot_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_white_shadow_back"
+            android:drawableLeft="@drawable/icon_service"
+            android:drawablePadding="@dimen/small_dimen"
+            android:drawableRight="@drawable/set_more"
+            android:padding="@dimen/base_dimen"
+            android:text="@string/hot_line" />
+
+        <TextView
+            android:id="@+id/tv_ai_consult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_white_shadow_back"
+            android:drawableLeft="@drawable/icon_intelligent"
+            android:drawablePadding="@dimen/small_dimen"
+            android:drawableRight="@drawable/set_more"
+            android:padding="@dimen/base_dimen"
+            android:text="@string/ai_consult" />
+    </LinearLayout>
+</LinearLayout>

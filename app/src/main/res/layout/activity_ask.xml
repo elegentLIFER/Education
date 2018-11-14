@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.sxmh.wt.education.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/colorBGWhite"
+        app:title="@string/online_ask_answer"
+        app:title_color="@color/colorTextBlack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/base_dimen"
+        android:layout_weight="1"
+        android:background="@color/colorBGWhite"
+        android:orientation="vertical"
+        android:padding="@dimen/base_dimen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_dimen"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/rect20"
+                android:drawablePadding="@dimen/small_dimen"
+                android:text="问题类型"
+                android:textColor="@color/colorTextBlack" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bk_et_line"
+                android:textSize="@dimen/s_text_size"
+                android:drawableRight="@drawable/xiala"
+                android:padding="@dimen/small_dimen"
+                android:text="请选择" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/small_dimen"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/rect20"
+                android:drawablePadding="@dimen/small_dimen"
+                android:text="问题标题"
+                android:textColor="@color/colorTextBlack" />
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bk_et_line"
+                android:textSize="@dimen/s_text_size"
+                android:hint="请输入问题标题"
+                android:padding="@dimen/small_dimen" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/ss_text_size"
+            android:layout_marginBottom="@dimen/small_dimen"
+            android:text="学煌教育教研老师100%解答，请按固定规则提问：标记【科目】【题目具体内容】，【只是点要写明书上第几页】【模拟试卷上的题目要截图】，视频课件需要写清【课件的标题】。"
+            android:textColor="@color/colorTextRed" />
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_marginBottom="@dimen/small_dimen"
+            android:background="@drawable/shape_bk_et_line"
+            android:padding="@dimen/small_dimen"
+            android:hint="请在此输入问题内容（最多可输入600个字）"
+            android:textSize="@dimen/s_text_size" />
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorMainBlue"
+            android:padding="@dimen/base_dimen"
+            android:text="提交问题"
+            android:layout_marginBottom="@dimen/small_dimen"
+            android:textColor="@color/colorTextWhite" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_outer"
+    android:layout_margin="@dimen/base_dimen"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kt1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/small_dimen">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginBottom="@dimen/base_dimen"
+            android:text="2018一建管理基础精讲班2018一建管理基础精讲班"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/base_text_size" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:drawableLeft="@drawable/home_lesson_hot_item_head"
+                android:drawablePadding="@dimen/small_dimen"
+                android:text="李昌春老师"
+                android:textSize="@dimen/s_text_size" />
+
+            <TextView
+                android:id="@+id/tv_play_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:drawableLeft="@drawable/home_lesson_hot_item_play"
+                android:drawablePadding="@dimen/small_dimen"
+                android:text="1133"
+                android:textSize="@dimen/s_text_size" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

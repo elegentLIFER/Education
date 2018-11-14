@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sxmh.wt.education.view.ShrinkableView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shrinkable_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/base_dimen"
+    android:layout_marginRight="@dimen/base_dimen"
+    android:layout_marginTop="@dimen/base_dimen" />

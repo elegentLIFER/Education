@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBGGray"
+    android:orientation="vertical">
+
+    <com.sxmh.wt.education.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/colorBGWhite"
+        app:right_text="@string/edit"
+        app:right_text_color="@color/colorMainBlue"
+        app:title="@string/my_download"
+        app:title_color="@color/colorTextBlack" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_my_download"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/base_dimen" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorMainBlue"
+            android:gravity="center"
+            android:padding="@dimen/base_dimen"
+            android:text="删除"
+            android:textColor="@color/colorTextWhite"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBGGray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBGWhite"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingTop="@dimen/base_dimen"
+            android:paddingBottom="@dimen/big_dimen"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/small_dimen">
+
+            <ImageView
+                android:id="@+id/iv_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/base_dimen"
+                android:src="@drawable/scan"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/ser_bg"
+                android:drawableLeft="@drawable/search"
+                android:drawablePadding="@dimen/small_dimen"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/small_dimen"
+                android:paddingLeft="@dimen/base_dimen"
+                android:paddingTop="@dimen/small_dimen"
+                android:text="@string/search_news"
+                android:textSize="@dimen/s_text_size" />
+
+            <com.sxmh.wt.education.view.RightTopStatusView
+                android:id="@+id/rtsv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/base_dimen"
+                android:paddingRight="@dimen/base_dimen"
+                app:bottom_img="@drawable/message"
+                app:top_img="@drawable/red_dot" />
+        </LinearLayout>
+
+        <com.leochuan.AutoPlayRecyclerView
+            android:id="@+id/arv_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBGWhite"
+            app:timeInterval="3000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBGWhite"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/base_dimen"
+            android:paddingTop="@dimen/big_dimen">
+
+            <com.sxmh.wt.education.view.RightTopStatusView
+                android:id="@+id/rtsv_lesson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:bottom_img="@drawable/home_lesson"
+                app:bottom_text="@string/lesson"
+                app:bottom_text_size="@dimen/s_text_size" />
+
+            <com.sxmh.wt.education.view.RightTopStatusView
+                android:id="@+id/rtsv_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:bottom_img="@drawable/home_live"
+                app:bottom_text="@string/live"
+                app:bottom_text_size="@dimen/s_text_size"
+                app:top_img="@drawable/free_of_charge" />
+
+            <com.sxmh.wt.education.view.RightTopStatusView
+                android:id="@+id/rtsv_question_lib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:bottom_img="@drawable/home_question_lib"
+                app:bottom_text="@string/question_lib"
+                app:bottom_text_size="@dimen/s_text_size" />
+
+            <com.sxmh.wt.education.view.RightTopStatusView
+                android:id="@+id/rtsv_ask_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:bottom_img="@drawable/home_question_response"
+                app:bottom_text="@string/question_response"
+                app:bottom_text_size="@dimen/s_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen"
+            android:background="@color/colorBGWhite"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/base_dimen">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_toutiao"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/small_dimen"
+                android:background="@color/colorTextDKGray" />
+
+            <com.leochuan.AutoPlayRecyclerView
+                android:id="@+id/arv_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:timeInterval="3000" />
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:maxLines="1"-->
+            <!--android:text="教育部不断加强青少年学生近视眼防控防冻防控.." />-->
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen"
+            android:background="@color/colorBGWhite"
+            android:padding="@dimen/small_dimen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/rect20"
+                android:drawablePadding="@dimen/small_dimen"
+                android:text="@string/lesson_type"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/base_text_size" />
+
+            <TextView
+                android:id="@+id/more_lesson_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/small_dimen"
+                android:drawableRight="@drawable/more"
+                android:maxLines="1"
+                android:text="@string/more" />
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_lesson_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBGWhite" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen"
+            android:background="@color/colorBGWhite"
+            android:padding="@dimen/small_dimen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/rect20"
+                android:drawablePadding="@dimen/small_dimen"
+                android:text="@string/lesson_advise"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/base_text_size" />
+
+            <TextView
+                android:id="@+id/more_lesson_advise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/small_dimen"
+                android:drawableRight="@drawable/more"
+                android:maxLines="1"
+                android:text="@string/more" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_lesson_advise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBGWhite" />
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen"
+            android:background="@color/colorBGWhite"
+            android:padding="@dimen/small_dimen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/rect20"
+                android:drawablePadding="@dimen/small_dimen"
+                android:text="@string/lesson_hot"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/base_text_size" />
+
+            <TextView
+                android:id="@+id/more_lesson_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/small_dimen"
+                android:drawableRight="@drawable/more"
+                android:maxLines="1"
+                android:text="@string/more" />
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_lesson_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBGWhite" />
+    </LinearLayout>
+
+</ScrollView>

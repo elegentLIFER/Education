@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.sxmh.wt.education.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/colorBGWhite"
+        app:title="@string/test_result"
+        app:title_color="@color/colorTextBlack" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.sxmh.wt.education.view.TestResultView
+                android:id="@+id/test_result_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/base_dimen" />
+
+            <com.sxmh.wt.education.view.QuestionCardView
+                android:id="@+id/qcv_single_opt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/base_dimen" />
+
+            <com.sxmh.wt.education.view.QuestionCardView
+                android:id="@+id/qcv_multi_opt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/base_dimen" />
+
+            <com.sxmh.wt.education.view.QuestionCardView
+                android:id="@+id/qcv_wenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/base_dimen" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBGWhite"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/small_dimen"
+        android:paddingTop="@dimen/small_dimen"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/tv_analyse_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/small_dimen"
+            android:drawableTop="@drawable/analyse_all"
+            android:gravity="center_horizontal"
+            android:text="@string/analyse_all" />
+
+        <TextView
+            android:id="@+id/tv_analyse_wrongs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/small_dimen"
+            android:drawableTop="@drawable/analyse_wrongs"
+            android:gravity="center_horizontal"
+            android:text="@string/analyse_wrongs" />
+
+        <TextView
+            android:id="@+id/tv_execise_again"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/small_dimen"
+            android:drawableTop="@drawable/execise_again"
+            android:gravity="center_horizontal"
+            android:text="@string/execise_again" />
+    </LinearLayout>
+</LinearLayout>

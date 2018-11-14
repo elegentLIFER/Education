@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBGGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/my_head_back" />
+
+            <com.sxmh.wt.education.view.RightTopStatusView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:padding="@dimen/base_dimen"
+                android:visibility="gone"
+                app:bottom_img="@drawable/message_"
+                app:top_img="@drawable/red_dot" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/base_dimen"
+                android:orientation="vertical"
+                android:padding="@dimen/small_dimen">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/shape_white_shadow_back"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="50dp"
+                        android:drawablePadding="@dimen/small_dimen"
+                        android:drawableRight="@drawable/my_change_name"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="@dimen/base_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_login_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/small_dimen"
+                        android:text="已连续登录15天"
+                        android:textSize="@dimen/s_text_size" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_operate_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/base_dimen"
+                        android:layout_marginTop="@dimen/base_dimen"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_my_collection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/small_dimen"
+                            android:drawableTop="@drawable/my_collection"
+                            android:gravity="center_horizontal"
+                            android:text="@string/my_collection" />
+
+                        <TextView
+                            android:id="@+id/tv_recent_watch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/small_dimen"
+                            android:drawableTop="@drawable/my_recent_watch"
+                            android:gravity="center_horizontal"
+                            android:text="@string/recent_watch" />
+
+                        <TextView
+                            android:id="@+id/tv_my_download"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/small_dimen"
+                            android:drawableTop="@drawable/my_download"
+                            android:gravity="center_horizontal"
+                            android:text="@string/my_download" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.sxmh.wt.education.view.CircleImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/touxaing" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_operate_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/base_dimen">
+
+            <TextView
+                android:id="@+id/tv_my_lesson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen"
+                android:background="@color/colorBGWhite"
+                android:drawableLeft="@drawable/my_lesson"
+                android:drawablePadding="@dimen/base_dimen"
+                android:drawableRight="@drawable/set_more"
+                android:padding="@dimen/base_dimen"
+                android:text="@string/my_lesson"
+                android:textColor="@color/colorTextBlack" />
+
+            <TextView
+                android:id="@+id/tv_my_question_lib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorBGWhite"
+                android:drawableLeft="@drawable/my_question_lib"
+                android:drawablePadding="@dimen/base_dimen"
+                android:drawableRight="@drawable/set_more"
+                android:padding="@dimen/base_dimen"
+                android:text="@string/my_question_lib"
+                android:textColor="@color/colorTextBlack" />
+
+            <TextView
+                android:id="@+id/tv_my_ask_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorBGWhite"
+                android:drawableLeft="@drawable/my_question_response"
+                android:drawablePadding="@dimen/base_dimen"
+                android:drawableRight="@drawable/set_more"
+                android:padding="@dimen/base_dimen"
+                android:text="@string/my_question_response"
+                android:textColor="@color/colorTextBlack" />
+
+            <TextView
+                android:id="@+id/tv_my_wrongs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorBGWhite"
+                android:drawableLeft="@drawable/my_wrongs"
+                android:drawablePadding="@dimen/base_dimen"
+                android:drawableRight="@drawable/set_more"
+                android:padding="@dimen/base_dimen"
+                android:text="@string/my_wrongs"
+                android:textColor="@color/colorTextBlack" />
+
+            <TextView
+                android:id="@+id/tv_my_live"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorBGWhite"
+                android:drawableLeft="@drawable/my_live"
+                android:drawablePadding="@dimen/base_dimen"
+                android:drawableRight="@drawable/set_more"
+                android:padding="@dimen/base_dimen"
+                android:text="@string/my_live"
+                android:textColor="@color/colorTextBlack" />
+
+            <TextView
+                android:id="@+id/tv_client_service_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen"
+                android:background="@color/colorBGWhite"
+                android:drawableLeft="@drawable/my_kefu"
+                android:drawablePadding="@dimen/base_dimen"
+                android:drawableRight="@drawable/set_more"
+                android:padding="@dimen/base_dimen"
+                android:text="@string/client_service_center"
+                android:textColor="@color/colorTextBlack" />
+
+            <TextView
+                android:id="@+id/tv_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorBGWhite"
+                android:drawableLeft="@drawable/my_feedback"
+                android:drawablePadding="@dimen/base_dimen"
+                android:drawableRight="@drawable/set_more"
+                android:padding="@dimen/base_dimen"
+                android:text="@string/feedback"
+                android:textColor="@color/colorTextBlack" />
+
+            <TextView
+                android:id="@+id/tv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorBGWhite"
+                android:drawableLeft="@drawable/my_feedback"
+                android:drawablePadding="@dimen/base_dimen"
+                android:drawableRight="@drawable/set_more"
+                android:padding="@dimen/base_dimen"
+                android:text="@string/logout"
+                android:textColor="@color/colorTextBlack" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

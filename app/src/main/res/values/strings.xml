@@ -1,0 +1,234 @@
+<resources>
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag can be number, alphabet, underscore, Chinese. Use , to split many tags.</string>
+    <string name="alias_hint">Alias can be number, alphabet, underscore, Chinese.</string>
+    <string name="mobilenumber_hint">The phone number can only start with a "+" or a number,other can only contain "-" and Numbers</string>
+    <string name="style_hint">style should be number</string>
+    <string name="error_style_empty">style cannot be empty</string>
+    <string name="error_alias_empty">alias cannot be empty</string>
+    <string name="error_tag_empty">tag cannot be empty</string>
+    <string name="error_tag_gs_empty">Invalid format</string>
+    <string name="mobilenumber_empty_guide">will clear last set phone number</string>
+    <string name="error_network">Failed to init due to network exception.</string>
+    <string name="logining">Running in background. Please see log.</string>
+    <string name="setting_su">Succeed to set</string>
+
+
+    <string name="app_name">学煌教育</string>
+
+    <string name="click_again_quit_app">再点一次退出程序</string>
+
+    <string name="search_news">搜索资讯、动态、人或群</string>
+    <string name="home_page">首页</string>
+    <string name="set">设置</string>
+    <string name="category">分类</string>
+    <string name="my">我的</string>
+
+    <string name="message">消息</string>
+
+    <!--Home-->
+    <string name="lesson">课程</string>
+    <string name="live">直播</string>
+    <string name="question_lib">题库</string>
+    <string name="question_response">问答</string>
+    <string name="lesson_type">课程分类</string>
+    <string name="lesson_advise">推荐课程</string>
+    <string name="lesson_hot">热门课程</string>
+    <string name="more">更多</string>
+
+    <!--设置界面-->
+    <string name="share_app">分享应用</string>
+    <string name="use_without_wifi">非WiFi环境下播放视频、直播、下载视频</string>
+    <string name="change_psw">修改密码</string>
+    <string name="allow_push_msg">允许消息推送</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="about">关于</string>
+    <string name="current_version">当前版本</string>
+    <string name="give_a_score">给我评分</string>
+    <string name="upgrade_app">更新</string>
+
+    <!--分类-->
+    <string name="manage">管理</string>
+    <string name="principle">法规</string>
+    <string name="economy">经济</string>
+    <string name="building">建筑</string>
+    <string name="electromechanical">机电</string>
+    <string name="city_plan">市政</string>
+    <string name="road">公路</string>
+    <string name="water_engineering">水利</string>
+    <string name="mine_industry">矿业</string>
+    <string name="communication">通信</string>
+    <string name="harbor">港航</string>
+    <string name="civil_aviation">民航</string>
+    <string name="railway">铁路</string>
+    <string name="watch">观看</string>
+    <string name="download">下载</string>
+    <string name="new_school_talk_question">网校讲题</string>
+    <string name="online_exercise">在线做题</string>
+    <string name="online_ask_answer">在线问答</string>
+
+    <!--我的界面-->
+    <string name="my_lesson">我的讲题</string>
+    <string name="my_question_lib">我的题库</string>
+    <string name="my_question_response">我的问答</string>
+    <string name="my_wrongs">我的错题</string>
+    <string name="my_live">我的直播</string>
+    <string name="client_service_center">客服中心</string>
+    <string name="feedback">意见反馈</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="recent_watch">最近观看</string>
+    <string name="my_download">我的下载</string>
+    <string name="logout">退出登录</string>
+    <string name="has_login_num">已连续登录 %s 天</string>
+
+    <!--直播-->
+    <string name="live_hot">热门直播</string>
+    <string name="playing_now">正在播放</string>
+    <string name="live_lesson">直播课程</string>
+    <string name="chat_area">讨论区</string>
+    <string name="playing">播放中</string>
+    <string name="appointment">预约</string>
+    <string name="look_back">回看</string>
+    <string name="developing">正在建设中，敬请期待</string>
+
+    <!--关于-->
+    <string name="about_us">关于我们</string>
+    <string name="function_introduce">功能介绍</string>
+    <string name="complain">投诉</string>
+    <string name="service_note">服务条款 </string>
+    <string name="privacy"> | 隐私政策</string>
+    <string name="check_new_version">检查新版本</string>
+    <string name="company_info">武汉学煌教育科技有限公司 鄂ICP备 17004444</string>
+
+    <!--个人资料-->
+    <string name="personal_info">个人资料</string>
+    <string name="save">保存</string>
+    <string name="head">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="gender">性别</string>
+    <string name="birthday">生日</string>
+    <string name="qq">QQ</string>
+    <string name="email">E-mail</string>
+    <string name="bind_phone">绑定手机</string>
+    <string name="un_bind">未绑定</string>
+
+    <!--登录注册-->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="get_code">获取验证码</string>
+    <string name="input_phone_num">请输入手机号</string>
+    <string name="input_username">请输入用户名</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="input_psw">请输入密码</string>
+    <string name="read_agree">我已阅读并同意</string>
+    <string name="protocol">《学煌教育服务协议》</string>
+    <string name="register_immediately">立即注册</string>
+    <string name="has_acccout">已有账户,</string>
+    <string name="to_login">去登录</string>
+    <string name="input_psw_again">请再次输入密码</string>
+    <string name="sure">确定</string>
+    <string name="next">下一步</string>
+    <string name="retrieve_psw">找回密码</string>
+    <string name="login_by_account">账号登录</string>
+    <string name="quick_login_by_phone">手机快捷登录</string>
+    <string name="forget_psw">忘记密码？</string>
+    <string name="login_by_code">扫码登录</string>
+    <string name="sure_login">确认登录</string>
+    <string name="cancel">取消</string>
+    <string name="psw_different_twice">两个输入的密码不一致</string>
+    <string name="sure_login_warn">学煌教育登录确认\n为保证账户安全，请确认是本人操作</string>
+
+    <!--我的收藏-->
+    <string name="talk_question">讲题</string>
+    <string name="ask_question">考题</string>
+
+    <!--我的下载-->
+    <string name="edit">编辑</string>
+
+    <!--问答-->
+    <string name="please_input_ask_content">请输入问题内容</string>
+    <string name="i_ask">我要提问</string>
+    <string name="has_answered">已解答</string>
+
+    <!--客服中心-->
+    <string name="pre_consultation">售前咨询</string>
+    <string name="after_consultation">售后咨询</string>
+    <string name="hot_line">客服热线</string>
+    <string name="ai_consult">智能顾问</string>
+
+    <!--意见反馈-->
+    <string name="your_feedback">您的反馈是</string>
+    <string name="consult">咨询</string>
+    <string name="advise">建议</string>
+    <string name="other">其他</string>
+    <string name="email_or_blink">邮箱（选填）：</string>
+    <string name="other_or_blink">其他（选填）：</string>
+    <string name="write_your_feedback_here">在此输入反馈意见，我们将为您不断改进</string>
+    <string name="so_that_we_can_reply">以便我们给您回复</string>
+    <string name="other_contact">其他联系方式（QQ或手机号）</string>
+    <string name="commit">提交</string>
+
+    <!--错题分析-->
+    <string name="wrongs_analyse">错题分析</string>
+    <string name="pre_question">上一题</string>
+    <string name="next_question">下一题</string>
+    <string name="question_card">题卡</string>
+
+    <!--消息-->
+    <string name="system_notify">系统通知</string>
+    <string name="activity_notify">活动通知</string>
+    <string name="study_remind">学习提醒</string>
+
+    <!--考卷-->
+    <string name="begin_do">开始做题</string>
+    <string name="see_analysis">查看分析</string>
+    <string name="ques_single_option">[单选题]</string>
+    <string name="ques_multi_option">[多选题]</string>
+    <string name="ques_analyse">[案例分析题]</string>
+    <string name="ques_single">单选题</string>
+    <string name="ques_multi">多选题</string>
+    <string name="ques_ana">案例分析题</string>
+    <string name="do_continue">继续做题</string>
+    <string name="do_again">重新做题</string>
+    <string name="test_result">考试结果</string>
+    <string name="has_the_first">已经是第一题</string>
+    <string name="has_the_last">已经是最后一题</string>
+
+    <!--考试结果-->
+    <string name="analyse_all">全部解析</string>
+    <string name="analyse_wrongs">错题解析</string>
+    <string name="execise_again">重新答题</string>
+    <string name="test_score">试题得分</string>
+    <string name="test_time">考试时间</string>
+
+    <!--题库-->
+    <string name="has_activated">已激活</string>
+    <string name="not_activated">未激活</string>
+    <string name="finished">完成:</string>
+    <string name="finished_all">全部完成</string>
+    <string name="has_finish_ques">已有%s人答题</string>
+    <string name="finish_status">%s/%s</string>
+    <string name="paper_name">%s————%s</string>
+
+    <!--课程-->
+    <string name="download_video">下载视频</string>
+    <string name="teacher">主讲人: %s</string>
+    <string name="play_num">播放次数: %s</string>
+    <string name="star">点赞</string>
+    <string name="collect">收藏</string>
+    <string name="select_which_select">选择要缓存的视频</string>
+    <string name="multi_select">多选</string>
+    <string name="sure_download">确定下载</string>
+    <string name="see_cache">查看缓存</string>
+
+    <string name="your_answer">你的答案：%s</string>
+    <string name="right_answer">正确答案：%s</string>
+    <string name="analyse">解析：\n  %s</string>
+
+    <string name="jump">%s 跳过</string>
+    <string name="qq_way">QQ：%s</string>
+    <string name="phone_way">手机：%s</string>
+
+
+    <string name="no_course">您没有课程,请联系客服</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主色调-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#0080FF</color>
+
+    <color name="colorMainBlue">#0080FF</color>
+
+    <!--文字-->
+    <color name="colorTextWhite">#FEFEFE</color>
+    <color name="colorTextLTGray">#888888</color>
+    <color name="colorTextDKGray">#666666</color>
+    <color name="colorTextBlack">#333333</color>
+    <color name="colorTextYellow">#FF9419</color>
+    <color name="colorTextRed">#FF3344</color>
+    <color name="colorTextGreen">#1dbf53</color>
+
+    <!--背景色-->
+    <color name="colorBGGray">#EEF1F4</color>
+    <color name="colorBGWhite">#FFFFFF</color>
+
+    <color name="colorLightBlue">#dfebf7</color>
+
+
+</resources>

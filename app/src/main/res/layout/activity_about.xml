@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBGGray"
+    android:orientation="vertical">
+
+    <com.sxmh.wt.education.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        app:title="@string/about_us"
+        android:background="@color/colorBGWhite"
+        app:title_color="@color/colorTextBlack"
+        android:layout_height="@dimen/title_height"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/about_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="version 1.1.0"
+        android:layout_margin="@dimen/base_dimen"
+        android:textColor="@color/colorMainBlue"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_function_introduce"
+        android:layout_width="match_parent"
+        android:text="@string/function_introduce"
+        android:layout_marginTop="@dimen/big_dimen"
+        android:layout_marginLeft="@dimen/base_dimen"
+        android:layout_marginRight="@dimen/base_dimen"
+        android:background="@color/colorBGWhite"
+        android:padding="@dimen/base_dimen"
+        android:drawableRight="@drawable/more"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_complain"
+        android:layout_width="match_parent"
+        android:text="@string/complain"
+        android:background="@color/colorBGWhite"
+        android:layout_marginLeft="@dimen/base_dimen"
+        android:layout_marginRight="@dimen/base_dimen"
+        android:padding="@dimen/base_dimen"
+        android:layout_marginTop="1px"
+        android:drawableRight="@drawable/more"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_check_version"
+        android:layout_width="match_parent"
+        android:text="@string/check_new_version"
+        android:visibility="gone"
+        android:background="@color/colorBGWhite"
+        android:layout_marginLeft="@dimen/base_dimen"
+        android:layout_marginRight="@dimen/base_dimen"
+        android:padding="@dimen/base_dimen"
+        android:layout_marginTop="1px"
+        android:drawableRight="@drawable/more"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_service_note"
+            android:layout_width="wrap_content"
+            android:text="@string/service_note"
+            android:gravity="center_horizontal|bottom"
+            android:textColor="@color/colorMainBlue"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_privacy"
+            android:layout_width="wrap_content"
+            android:text="@string/privacy"
+            android:gravity="center_horizontal|bottom"
+            android:textColor="@color/colorMainBlue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="@dimen/base_dimen"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/company_info"
+        android:layout_height="wrap_content" />
+</LinearLayout>

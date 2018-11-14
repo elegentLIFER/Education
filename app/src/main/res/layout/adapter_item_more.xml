@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_outer"
+    android:background="@color/colorBGWhite"
+    android:layout_marginTop="@dimen/base_dimen"
+    android:layout_marginLeft="@dimen/base_dimen"
+    android:layout_marginRight="@dimen/base_dimen"
+    android:padding="@dimen/small_dimen"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/rect20"
+        android:drawablePadding="@dimen/small_dimen"
+        android:padding="@dimen/small_dimen"
+        android:text="管理" />
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_weight="1"
+        android:textColor="@color/colorMainBlue"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/more_"/>
+</LinearLayout>

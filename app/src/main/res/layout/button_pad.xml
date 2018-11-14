@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBGWhite"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/base_dimen"
+    android:paddingTop="@dimen/big_dimen">
+
+    <com.sxmh.wt.education.view.RightTopStatusView
+        android:id="@+id/rtsv_net_school_talk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:bottom_img="@drawable/net_school_talk"
+        app:bottom_text="@string/new_school_talk_question" />
+
+    <com.sxmh.wt.education.view.RightTopStatusView
+        android:id="@+id/rtsv_work_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:bottom_img="@drawable/online_exercise"
+        app:bottom_text="@string/online_exercise" />
+
+    <com.sxmh.wt.education.view.RightTopStatusView
+        android:id="@+id/rtsv_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:bottom_img="@drawable/home_live"
+        app:bottom_text="@string/live" />
+
+    <com.sxmh.wt.education.view.RightTopStatusView
+        android:id="@+id/rtsv_ask_answer_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:bottom_img="@drawable/home_question_response"
+        app:bottom_text="@string/online_ask_answer" />
+</LinearLayout>

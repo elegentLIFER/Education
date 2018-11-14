@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBGGray"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/colorBGWhite"
+        android:gravity="center"
+        android:text="@string/set"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/base_text_size" />
+
+    <TextView
+        android:id="@+id/tv_share_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen"
+        android:background="@color/colorBGWhite"
+        android:drawableRight="@drawable/set_more"
+        android:padding="@dimen/base_dimen"
+        android:text="@string/share_app" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen"
+        android:background="@color/colorBGWhite"
+        android:padding="@dimen/base_dimen">
+
+        <TextView
+            android:id="@+id/tv_use_without_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:text="@string/use_without_wifi" />
+
+        <Switch
+            android:id="@+id/switch_use_without_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_change_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen"
+        android:background="@color/colorBGWhite"
+        android:drawableRight="@drawable/set_more"
+        android:padding="@dimen/base_dimen"
+        android:text="@string/change_psw" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBGWhite"
+        android:padding="@dimen/base_dimen">
+
+        <TextView
+            android:id="@+id/tv_allow_push_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:text="@string/allow_push_msg" />
+
+        <Switch
+            android:id="@+id/switch_allow_push_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorBGWhite"
+        android:drawableRight="@drawable/set_more"
+        android:padding="@dimen/base_dimen"
+        android:text="@string/clear_cache" />
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen"
+        android:background="@color/colorBGWhite"
+        android:drawableRight="@drawable/set_more"
+        android:padding="@dimen/base_dimen"
+        android:text="@string/about" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorBGWhite">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_dimen"
+            android:text="@string/current_version" />
+
+        <TextView
+            android:id="@+id/tv_current_version"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:padding="@dimen/small_dimen"
+            android:textColor="@color/colorMainBlue" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_give_a_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorBGWhite"
+        android:drawableRight="@drawable/set_more"
+        android:padding="@dimen/base_dimen"
+        android:text="@string/give_a_score" />
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_outer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/base_dimen"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/shape_white_shadow_back"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/kt1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/small_dimen"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018一建管理基础精讲班2018一建管理基础精讲班"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/s_text_size" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/live_item_time"
+            android:drawablePadding="@dimen/small_dimen"
+            android:text="2018.7.25 19:52-20:51"
+            android:textSize="@dimen/ss_text_size" />
+
+        <TextView
+            android:id="@+id/tv_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/home_lesson_hot_item_head"
+            android:drawablePadding="@dimen/small_dimen"
+            android:text="李昌春老师"
+            android:textSize="@dimen/ss_text_size" />
+    </LinearLayout>
+</LinearLayout>

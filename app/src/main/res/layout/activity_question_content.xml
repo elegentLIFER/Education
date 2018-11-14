@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBGGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.sxmh.wt.education.view.TitleView
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/colorBGWhite"
+            app:title="@string/online_ask_answer"
+            app:title_color="@color/colorTextBlack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen"
+            android:layout_marginRight="@dimen/base_dimen"
+            android:layout_marginTop="@dimen/base_dimen"
+            android:background="@drawable/shape_white_shadow_back"
+            android:orientation="vertical"
+            android:padding="@dimen/base_dimen">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="@dimen/small_dimen">
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLightBlue"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="@dimen/base_dimen"
+                    android:paddingRight="@dimen/base_dimen"
+                    android:paddingTop="2dp"
+                    android:text="@string/economy"
+                    android:textColor="@color/colorMainBlue" />
+
+                <TextView
+                    android:id="@+id/tv_problem_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/base_dimen"
+                    android:layout_marginLeft="@dimen/base_dimen"
+                    android:layout_marginRight="@dimen/base_dimen"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/base_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.sxmh.wt.education.view.CircleImageView
+                    android:id="@+id/iv_header"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="@dimen/small_dimen"
+                    android:src="@drawable/ask_answer_header" />
+
+                <TextView
+                    android:id="@+id/tv_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:text="菜爽" />
+
+                <TextView
+                    android:id="@+id/tv_teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="2018-6-25 18:21:20" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/webview_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/base_dimen"
+            android:layout_marginTop="@dimen/base_dimen"
+            android:background="@drawable/shape_white_shadow_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_dimen"
+            android:layout_marginLeft="@dimen/base_dimen"
+            android:layout_marginRight="@dimen/base_dimen"
+            android:background="@drawable/shape_white_shadow_back"
+            android:drawableLeft="@drawable/rect20"
+            android:drawablePadding="@dimen/small_dimen"
+            android:padding="@dimen/base_dimen"
+            android:text="历史回复" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_reply_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen"
+            android:layout_marginRight="@dimen/base_dimen"
+            android:background="@drawable/shape_white_shadow_back"
+            android:padding="@dimen/small_dimen" />
+
+        <!--<WebView-->
+        <!--android:id="@+id/webview_reply"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/base_dimen"-->
+        <!--android:layout_marginRight="@dimen/base_dimen"-->
+        <!--android:background="@drawable/shape_white_shadow_back" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_dimen"
+            android:layout_marginLeft="@dimen/base_dimen"
+            android:layout_marginRight="@dimen/base_dimen"
+            android:layout_marginTop="@dimen/base_dimen"
+            android:background="@drawable/shape_white_shadow_back"
+            android:drawableLeft="@drawable/rect20"
+            android:drawablePadding="@dimen/small_dimen"
+            android:padding="@dimen/base_dimen"
+            android:text="回复" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen"
+            android:layout_marginRight="@dimen/base_dimen"
+            android:background="@drawable/shape_white_shadow_back"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/base_dimen">
+
+            <jp.wasabeef.richeditor.RichEditor
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bk_et_line"
+                android:gravity="left"
+                android:hint="在此输入回复内容（最多不超过600字）"
+                android:padding="@dimen/small_dimen" />
+
+            <ImageView
+                android:id="@+id/iv_add_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/small_dimen"
+                android:src="@drawable/insertpic" />
+
+            <TextView
+                android:id="@+id/tv_commit_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen"
+                android:background="@drawable/shape_bt_bk_round_blue"
+                android:paddingBottom="@dimen/small_dimen"
+                android:paddingLeft="@dimen/big_dimen"
+                android:paddingRight="@dimen/big_dimen"
+                android:paddingTop="@dimen/small_dimen"
+                android:text="提交回复"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="@dimen/s_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

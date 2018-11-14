@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_outer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/base_dimen"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base_dimen"
+        android:drawableLeft="@drawable/right_square"
+        android:drawablePadding="@dimen/small_dimen"
+        android:text="这里是讲题这里是讲题这里是讲题"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/base_text_size" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:drawableLeft="@drawable/home_lesson_hot_item_head"
+            android:drawablePadding="@dimen/small_dimen"
+            android:text="李昌春老师"
+            android:textSize="@dimen/s_text_size" />
+
+        <TextView
+            android:id="@+id/tv_play_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:drawableLeft="@drawable/home_lesson_hot_item_play"
+            android:drawablePadding="@dimen/small_dimen"
+            android:text="1133"
+            android:textSize="@dimen/s_text_size" />
+    </FrameLayout>
+</LinearLayout>

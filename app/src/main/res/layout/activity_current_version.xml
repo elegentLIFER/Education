@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBGGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.sxmh.wt.education.view.TitleView
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            app:title="@string/function_introduce"
+            android:background="@color/colorBGWhite"
+            app:title_color="@color/colorTextBlack"
+            android:layout_height="@dimen/title_height"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="学煌1.1.0版本特性"
+            android:textColor="@color/colorMainBlue"
+            android:background="@color/colorBGWhite"
+            android:layout_marginTop="@dimen/small_dimen"
+            android:padding="@dimen/base_dimen"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="1.学煌教育教研老师100%解答"
+            android:background="@color/colorBGWhite"
+            android:textColor="@color/colorTextBlack"
+            android:layout_marginTop="1px"
+            android:padding="@dimen/base_dimen"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="轻松攻破难题，学习无压力"
+            android:background="@color/colorBGWhite"
+            android:padding="@dimen/base_dimen"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:background="@color/colorBGWhite"
+            android:src="@drawable/zu4"
+            android:padding="@dimen/base_dimen"
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="2.在线直播，互动交流，名师答疑"
+            android:background="@color/colorBGWhite"
+            android:textColor="@color/colorTextBlack"
+            android:layout_marginTop="1px"
+            android:padding="@dimen/base_dimen"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="乐趣横生，氛围愉悦"
+            android:background="@color/colorBGWhite"
+            android:padding="@dimen/base_dimen"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:padding="@dimen/base_dimen"
+            android:background="@color/colorBGWhite"
+            android:adjustViewBounds="true"
+            android:src="@drawable/zu5"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

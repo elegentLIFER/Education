@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.sxmh.wt.education.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/colorBGWhite"
+        app:title="头条通知"
+        app:title_color="@color/colorTextBlack" />
+
+    <TextView
+        android:id="@+id/tv_msg_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen"
+        android:background="@color/colorBGWhite"
+        android:padding="@dimen/small_dimen"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/base_text_size" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen"
+        android:background="@color/colorBGWhite"
+        android:padding="@dimen/small_dimen"
+        android:textSize="@dimen/s_text_size" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen"
+        android:layout_marginRight="@dimen/base_dimen"
+        android:layout_marginTop="@dimen/base_dimen"
+        android:paddingBottom="@dimen/base_dimen" />
+
+</LinearLayout>

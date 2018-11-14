@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBGGray"
+    android:orientation="vertical">
+
+    <com.sxmh.wt.education.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        app:title="@string/recent_watch"
+        android:background="@color/colorBGWhite"
+        app:title_color="@color/colorTextBlack"
+        android:layout_height="@dimen/title_height"/>
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_recent_watch"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/base_dimen"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

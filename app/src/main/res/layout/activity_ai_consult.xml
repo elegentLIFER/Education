@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.sxmh.wt.education.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/colorBGWhite"
+        app:title="@string/ai_consult"
+        app:title_color="@color/colorTextBlack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/base_dimen"
+        android:background="@drawable/shape_white_shadow_back"
+        android:orientation="vertical"
+        android:padding="@dimen/small_dimen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亲，您好，想学工程师就找学煌教育！学煌教育，提供优质的教育服务。下面您可以提出想要问的问题的关键词，如：一建"
+            android:textSize="@dimen/s_text_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/base_dimen"
+            android:src="@drawable/shape_bt_long_gray_line" />
+
+        <TextView
+            android:id="@+id/tv_demo_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一建什么时候考试"
+            android:textColor="@color/colorMainBlue"
+            android:textSize="@dimen/ss_text_size" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_content"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/base_dimen"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBGWhite"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_dimen">
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入你想要问的问题"
+            android:textSize="@dimen/s_text_size" />
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bt_bk_round_blue"
+            android:gravity="center"
+            android:paddingLeft="@dimen/small_dimen"
+            android:text="发送"
+            android:textColor="@color/colorTextWhite" />
+    </LinearLayout>
+</LinearLayout>
