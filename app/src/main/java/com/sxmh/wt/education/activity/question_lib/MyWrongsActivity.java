@@ -1,6 +1,8 @@
 package com.sxmh.wt.education.activity.question_lib;
 
+import android.app.ActivityManager;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -13,8 +15,15 @@ import com.sxmh.wt.education.util.Net;
 import com.sxmh.wt.education.util.ToastUtil;
 import com.sxmh.wt.education.view.TitleView;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 
 import butterknife.InjectView;
 

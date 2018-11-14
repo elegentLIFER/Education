@@ -21,6 +21,7 @@ import com.sxmh.wt.education.view.TitleView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.BlockingQueue;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
