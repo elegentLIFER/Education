@@ -31,7 +31,6 @@ public class AskAnswerFragment extends BaseFragment implements RvAskAnswerAdapte
 
     private String classId;
 
-
     @Override
     protected int initLayoutId() {
         return R.layout.recycler_view;

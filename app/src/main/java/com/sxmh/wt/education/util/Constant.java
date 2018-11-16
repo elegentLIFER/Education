@@ -2,14 +2,9 @@ package com.sxmh.wt.education.util;
 
 import android.os.Environment;
 
-import java.util.concurrent.TimeUnit;
-
-import io.reactivex.Observable;
-import io.reactivex.disposables.Disposable;
-
 public class Constant {
-//                    public static final String BASE_URL = "http://120.77.242.84:8083/xhweb/"; // 测试
-    public static final String BASE_URL = "http://www.xuehuang.cn/"; // 正式
+                    public static final String BASE_URL = "http://120.77.242.84:8083/xhweb/"; // 测试
+//    public static final String BASE_URL = "http://www.xuehuang.cn/"; // 正式
 
     public static final String SHARE_URL = "http://www.xuehuang.cn/xhweb/mobileController.do?download";
 
@@ -62,5 +57,4 @@ public class Constant {
     public static final int LESSON_POWER_FREE = 0;
     public static final int LESSON_POWER_LOGIN = 1;
     public static final int LESSON_POWER_BUY = 2;
-
 }

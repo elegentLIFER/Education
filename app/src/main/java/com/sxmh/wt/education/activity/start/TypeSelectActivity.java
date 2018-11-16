@@ -1,5 +1,10 @@
 package com.sxmh.wt.education.activity.start;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.GradientDrawable;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.Shape;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -12,7 +17,14 @@ import com.sxmh.wt.education.model.response.AllCourseClassResponse;
 import com.sxmh.wt.education.util.Net;
 
 import java.util.ArrayList;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Vector;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
 
 import butterknife.InjectView;
 import io.reactivex.Observable;
